@@ -1,0 +1,14 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}CV - Nicolas NAUDIN{% endblock %}
+
+{% block body %}
+<div id="cv-container" >
+    <div id="left-container">
+        {{ include("left/left.html.twig") }}
+    </div>
+    <div id="right-container">
+        {{ include("right/right.html.twig") }}
+    </div>
+</div>
+{% endblock %}

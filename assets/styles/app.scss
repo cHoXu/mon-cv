@@ -1,0 +1,80 @@
+/* MAIN COLORS */
+$primary-color: white;
+$secondary-color: #373740;
+$tertiary-color: #dfd7cf;
+
+/* FONTS COLOR */
+$font-color-primary: $tertiary-color;
+$font-color-secondary: $secondary-color;
+$font-color-tertiary: $primary-color;
+
+
+@mixin flex-row {
+    display: flex;
+    flex-direction: row;
+}
+@mixin border-radius {
+    border-radius: 10px;
+}
+@mixin ombres {
+    box-shadow: 0 0 0.3em black;
+}
+
+@mixin flex-center-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin flex-column-center {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+@page  {
+    size: A4;
+    margin: 0;
+}
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+}
+
+#cv-container {
+    width: 98%;
+    @include ombres;
+    @include flex-row;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+.mb {
+    margin-bottom: 0.2em;
+}
+
+.skills {
+    width: 90%;
+    height: 12px;
+    background-color: $primary-color;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    .skill {
+        height: 100%;
+        width: 50%;
+        background-color: #5a655f;
+        border-radius: 5px;
+        text-align: center;
+        color: white;
+        font-size: 18px;
+        line-height: 30px;
+
+    }
+}
+
+@import "left/left-style";
+@import "right/right-style";

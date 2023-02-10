@@ -1,0 +1,173 @@
+#right-container {
+  width: 100%;
+  margin-top:1em;
+  margin-bottom:1em;
+
+}
+
+#header {
+  height: 230px;
+  justify-content: center;
+  @include flex-column-center;
+  background-color: $secondary-color;
+  h1
+  {
+    font-size: 3em;
+    color: $font-color-primary;
+  }
+  h2 {
+    color: $font-color-tertiary;
+    font-size: 1.4em;
+    text-transform: uppercase;
+  }
+  .bubble {
+    box-shadow: 0 0 0.3em $tertiary-color;
+    width: 25%;
+    display: flex;
+    font-size: 0.9em;
+    font-weight: bold;
+    border-radius: 5px;
+    justify-content: center;
+    color: $font-color-secondary;
+    background-color: $tertiary-color;
+    h3  {
+      margin: 0;
+      text-transform: uppercase;
+    }
+  }
+}
+
+#main-content {
+  width: 85%;
+  margin-left: 2em;
+  background-color: white;
+  article {
+    .content-title {
+      height: 2em;
+      display: flex;
+      margin-top: 2em;
+      align-items: center;
+      color: $font-color-primary;
+      background-color: $secondary-color;
+      h3 { margin-left: 1em; }
+    }
+  }
+
+  #competences {
+  .competences-content-main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 1em;
+    .competences-content {
+      width: 95%;
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 0.5em;
+      justify-content: space-between;
+      .bubble {
+        width: 25%;
+        height: 35px;
+        display: flex;
+        font-size: 0.8em;
+        font-weight: bold;
+        border-radius: 5px;
+        align-items: center;
+        flex-direction: column;
+        color: $font-color-secondary;
+        background-color: $tertiary-color;
+        @include ombres;
+        .bubble-title {
+          margin-bottom: 0.3em;
+        }
+      }
+    }
+  }
+    .competences-content-footer {
+      width: 100%;
+      display: flex;
+      margin-top: 0.5em;
+      justify-content: center;
+      div {
+        width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+    }
+
+  }
+  #formations {
+    ul {
+      padding: 0;
+      display: flex;
+      list-style: none;
+      justify-content: space-between;
+      li {
+        width: 30%;
+        text-align: center;
+      }
+      .degree {
+        font-size: 0.9em;
+        font-weight: bold;
+        margin-bottom: 0.5em;
+        text-transform: uppercase;
+      }
+      .institution {
+        color: gray;
+        font-size: 0.7em;
+        font-style: italic;
+      }
+      .date {
+        color: gray;
+        font-size: 0.7em;
+      }
+    }
+  }
+  #experiences {
+    .section-content {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      ul {
+        width: 95%;
+        padding-left: 0;
+        list-style-type: none;
+        .experience-description {
+          display: flex;
+          margin-bottom: 1em;
+          flex-direction: column;
+          align-items: center;
+          h4 {
+            margin: 0;
+            text-transform: uppercase;
+          }
+          .company {
+            margin-top: 0.2em;
+            width: 90%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            p {
+              margin: 0;
+              font-size: 0.8em;
+              color: gray;
+              span {font-style: italic;}
+            }
+          }
+          .description {
+            width: 90%;
+            margin-top: 0.2em;
+            p {
+              margin: 0;
+              font-size: 0.8em;
+              text-align: justify;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
