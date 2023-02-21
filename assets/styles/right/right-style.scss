@@ -138,6 +138,9 @@
           margin-bottom: 1em;
           flex-direction: column;
           align-items: center;
+          .bottom {
+            margin-bottom: -10px;
+          }
           h4 {
             margin: 0;
             text-transform: uppercase;
@@ -154,6 +157,13 @@
               font-size: 0.8em;
               color: gray;
               span {font-style: italic;}
+            }
+          }
+          .accent {
+            justify-content: center;
+            p {
+              font-size: 1em;
+              text-decoration: underline;
             }
           }
           .description {
